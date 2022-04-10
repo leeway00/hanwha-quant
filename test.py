@@ -11,13 +11,13 @@ import matplotlib.pyplot as plt
 
 data_list = os.listdir('./data')
 data_dict = get_data(data_list)
-aapl = preprocess(data_dict['FB.csv']).data
+aapl = preprocess(data_dict['.csv']).data
 
 
 # %%
 
 # 2. Testing Intraday momentum
-aapl['intra'] = (aapl['Close/Last']- aapl['Open'])/(aapl['Low']-aapl['High'])*100
+aapl['intra'] = (aapl['Close/Last']- aapl['Open'])/(aapl['High']-aapl['Low'])*100
 aapl['intra2'] = (aapl['intra'].rolling(window=252).rank('max')-1)*100/251
 
 aapl['pct']=aapl['Close/Last'].pct_change()

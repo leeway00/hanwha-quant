@@ -6,7 +6,7 @@
 #### 1. Rank price momentum(Q2_result.csv)
 - The score is a strategy that yields the score based on the highest peak in last 252 trading days.
 - 전고점 대비 현재 종가의 위치를 나타낸다.
-- $(rank(Close, window=252)-1)/251$
+- <img src="https://render.githubusercontent.com/render/math?math = (rank(Close, window=252)-1)/251">
 - 장점:
   - 전고점을 뚫고 상승하는 경우를 파악하기 쉽다
 - 단점:
@@ -16,7 +16,7 @@
 #### 2. Rank Intraday momentum(Q3_result.csv)
 -  Rank based on how much a price rose from open to close compared to its movement toward the day.
 - 일간 상승분(Close-Open)을 일간 진폭(High-Low)로 나눈 값을, 1년치의 window에서 순위를 매긴다
-- $(rank(\frac{Close-Open}{High-Low}, window=252)-1)/251$
+- <img src="https://render.githubusercontent.com/render/math?math=(rank(\frac{Close-Open}{High-Low}, window=252)-1)/251">
 - rank방법은 1과 동일하게 진행하였다
 - 장점:
   - 중요한 이벤트에 의해 하락 없이 상승하는 경우를 파악하기 쉽다

@@ -59,7 +59,7 @@ class strategies:
     def ranked_intraday_momentum(data):
         temp_data = pd.DataFrame(data.Date)
         temp_data['intra'] = \
-            (data['Close/Last']- data['Open'])/(data['Low']-data['High'])*100
+            (data['Close/Last']- data['Open'])/(data['High']-data['Low'])*100
         temp_data['intra']= \
             (temp_data['intra'].rolling(window=252).rank('max')-1)*100/251
         temp_data.dropna(axis=0, how='any', inplace=True)

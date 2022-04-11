@@ -30,9 +30,9 @@
 ![ZNGA](./result/images_OLS/ZNGA.png)
 
 1. Methodology
-   1. Execute OLS with 1 year window
-   2. Return R-squared value
-   3. plot by each stock
+   1. Execute OLS to predict a daily return. The model is trained with 1 year window.
+   3. Return R-squared value
+   4. plot by each stock
 2. Result
-   1. Overall two strategies show similar predictive power
+   1. Overall, both scores show similar explicability on the daily return
    2. However, the first strategy showed bettwer result in recent years (2021, 2022)

@@ -24,15 +24,17 @@
   - If the stock have small daily increment as well as small daily difference between High and Low, the score will be high but this case is irrelevant to momentum.
 
 ### 3. R-squared Comparison
+
+1. Methodology
+   1. Execute linear regression (OLS) which predict a daily return, to check tomorrow's return is explainable by today's score. The model is trained with 1 year window.
+   3. Return R-squared values of each year
+   4. plot by each stock
+2. Result
+   1. Overall, both scores show similar explicability on the daily return
+   2. However, the first strategy showed bettwer result in recent years (2021, 2022)
+
 ![AMD](./result/images_OLS/AMD.png)
 ![CSCO](./result/images_OLS/CSCO.png)
 ![AAPL](./result/images_OLS/AAPL.png)
 ![ZNGA](./result/images_OLS/ZNGA.png)
 
-1. Methodology
-   1. Execute OLS to predict a daily return. The model is trained with 1 year window.
-   3. Return R-squared value
-   4. plot by each stock
-2. Result
-   1. Overall, both scores show similar explicability on the daily return
-   2. However, the first strategy showed bettwer result in recent years (2021, 2022)

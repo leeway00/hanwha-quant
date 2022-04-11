@@ -24,8 +24,9 @@
   - If the stock have small daily increment as well as small daily difference between High and Low, the score will be high but this case is irrelevant to momentum.
 
 ### 3. R-squared Comparison
-![AAPL](./result/images_OLS/AAPL.png)
+![AMD](./result/images_OLS/AMD.png)
 ![CSCO](./result/images_OLS/CSCO.png)
+![AAPL](./result/images_OLS/AAPL.png)
 ![ZNGA](./result/images_OLS/ZNGA.png)
 
 1. Methodology

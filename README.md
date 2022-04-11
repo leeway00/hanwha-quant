@@ -8,9 +8,9 @@
 - 전고점 대비 현재 종가의 위치를 나타낸다.
 - <img src="https://render.githubusercontent.com/render/math?math={(rank(Close, window=252)-1)/251} #gh-light-mode-only"> <img src="https://render.githubusercontent.com/render/math?math={\color{white}(rank(Close, window=252)-1)/251}, window=252)-1)/251 #gh-dark-mode-only">
 - 장점:
-  - 전고점을 뚫고 상승하는 경우를 파악하기 쉽다
+  - 전고점을 뚫고 상승하는 경우를 파악하기 쉽다.
 - 단점:
-  - 현재의 상태가 하락인지 상승인지 알기 어렵다.
+  - 현재의 상태가 하락하고 있는 중인지 상승하고 있는 중인지 알기 어렵다.
 
 
 #### 2. Rank Intraday momentum(Q3_result.csv)

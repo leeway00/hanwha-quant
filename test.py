@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 data_list = os.listdir('./data')
 data_dict = get_data(data_list)
-aapl = preprocess(data_dict['.csv']).data
+aapl = preprocess(data_dict['AAPL.csv']).data
 
 
 # %%
@@ -126,7 +126,3 @@ x = aapl6['MS5_rank']
 model6 = sm.OLS(y,x).fit()
 print(model6.summary())
 
-
-# %%
-
-# %%

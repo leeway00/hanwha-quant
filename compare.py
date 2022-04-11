@@ -18,7 +18,7 @@ def price_score_plot(data, ticker):
     axs[3].set_xlabel('ranked intraday momentum')
     fig.suptitle(ticker)
     fig.tight_layout()
-    plt.savefig('./result/images2021/'+ticker+'.png')
+    plt.savefig('./result/images2021/'+ticker+'.png', facecolor = 'white')
     plt.show()
     
 # %%
@@ -48,7 +48,7 @@ class OLS_tools:
         plt.plot(data.Date, data.score2, label='ranked intraday momentum')
         plt.legend()
         fig.tight_layout()
-        plt.savefig('./result/images_OLS/'+ticker+'.png')
+        plt.savefig('./result/images_OLS/'+ticker+'.png', facecolor = 'white')
         plt.show()
     
     
@@ -75,7 +75,7 @@ if __name__=='__main__':
     for i in data_list:
         ticker = i.replace('.csv', '')
         temp = data_dict[i][data_dict[i].Date > '2021-01-01']
-        # price_score_plot(temp, ticker)
+        price_score_plot(temp, ticker)
         
         OLS_tools.plot(OLS_tools.yearly_res(data_dict[i], ticker), ticker)
 

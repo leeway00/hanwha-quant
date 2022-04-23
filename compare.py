@@ -79,5 +79,3 @@ if __name__=='__main__':
         
         OLS_tools.plot(OLS_tools.yearly_res(data_dict[i], ticker), ticker)
 
-
-# %%

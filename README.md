@@ -1,4 +1,4 @@
-# Sample Codes with simple quant strategies
+# Sample Codes based on simple strategies
 
 ## 1. Rank price momentum(Q2_result.csv)
 - The score is a strategy that yields the score based on the highest peak in last 252 trading days.

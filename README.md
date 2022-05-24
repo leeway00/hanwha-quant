@@ -1,4 +1,4 @@
-# Hanwha Financial Network 2022 - Global Internship Program
+# Sample Codes with simple quant strategies
 ## Younghun Lee
 
 ### 1. Rank price momentum(Q2_result.csv)
